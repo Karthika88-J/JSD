@@ -16,6 +16,7 @@ public class Ebbill {
         }
         else
             amt=(unit-500)*8.40f+300*4.70f+100*6.70f;
-System.out.println(amt);    }
+System.out.println(amt);  
+  }
     
 }

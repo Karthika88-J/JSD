@@ -22,7 +22,7 @@ public class Codition {
             int m4=scan.nextInt();
             int m5=scan.nextInt();
             String res="";
-            if(m1>34 && m2<34 && m3<34 && m4<34 &&m5<34){
+            if(m134 && m2<34 && m3<34 && m4<34 &&m5<34){
                 res="pass";
 
             }
