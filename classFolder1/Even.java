@@ -1,3 +1,4 @@
+package classFolder1;
 import java.util.Scanner;
 
 public class Even {

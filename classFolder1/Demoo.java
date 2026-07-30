@@ -1,3 +1,4 @@
+package classFolder1;
 
 class Demoo{
     public static void main(String[] args) {
