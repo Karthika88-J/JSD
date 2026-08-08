@@ -14,5 +14,6 @@ public class reversenum {
 
         }
         System.out.println(q);
+        scan.close();
     }
 }

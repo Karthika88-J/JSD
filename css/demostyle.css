@@ -1,0 +1,19 @@
+h1{
+    background-color: chocolate;
+    border-radius: 20px solid white;
+}
+h2
+{
+     background-color: rgb(101, 119, 179);
+    border-radius: 50px solid rgb(224, 10, 135);
+    text-align: center;
+}
+h3{
+     background-color: rgba(219, 151, 103, 0.597);
+    border-radius: 70px solid rgb(62, 182, 35);
+    text-align: right;
+}
+*
+{
+    font-size: 45px;
+}

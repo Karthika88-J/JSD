@@ -11,7 +11,7 @@ public class revere {
         for(int i= len-1;i>=0;i--){
         char c= k.charAt(i);
            System.out.print(k.charAt(i));
-            
+            scan.close();
         }
        
 
