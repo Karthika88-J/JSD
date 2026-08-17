@@ -1,0 +1,29 @@
+1)given no is even or odd
+2)given no is +ve/-ve/0
+3)given year is leap or not
+4)sum of the nnumber
+                    7+8+9+10+11+12+13+14+15+16+17+18+19+20+21+22+23+24+25=total value       
+5)var i=1;
+while(i<=10){
+    i++;
+    d.w(i)
+}
+output:2 3 4 5............11
+
+6)for loop hw
+find given no. is prime or not a prime
+7)while loop hw
+sum of digits
+ex:
+        1234
+        o/p=10
+
+8)display even number
+ex:  
+            1234
+            o/p 24
+
+9)display sum of even number
+ex: 
+            1234
+            o/p=6
