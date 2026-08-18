@@ -1,0 +1,49 @@
+<!--
+ Nested loop 
+ ==========================
+ for (i=1;j<=5;j++)
+  {
+ document.write(" "+i+j);
+ }
+ document.write("<br>");
+ o/p:
+ 11 12 13 14 15
+ 21 22 23 24 25
+ 31 32 33 34 35 
+ 41 42 43 44 45
+ 51 52 53 54 55
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function disc(){
+            var arr=[[12,33,23],[44,55,66],[77,88,99]];
+            var sum=0;
+                for(var i=0;i<3;i++){
+                    for(var j=0;j<3;j++) {
+                        sum=sum+arr[i][j]; 
+                            document.write(" " +arr[i][j]);
+                     
+                    }
+                    document.write(" = "+sum +"<br>");
+                    sum=0;
+                }
+
+
+        }
+    </script>
+</head>
+<body>
+    <h1><center>2D Array </center></h1>
+    <br>
+    <button onclick="disc()">Nested Array</button>
+    
+</body>
+</html>

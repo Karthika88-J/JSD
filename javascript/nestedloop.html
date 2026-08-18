@@ -1,0 +1,47 @@
+<!--
+ Nested loop 
+ ==========================
+ for (i=1;j<=5;j++)
+  {
+ document.write(" "+i+j);
+ }
+ document.write("<br>");
+ o/p:
+ 11 12 13 14 15
+ 21 22 23 24 25
+ 31 32 33 34 35 
+ 41 42 43 44 45
+ 51 52 53 54 55
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function disc(){
+            var n= document.getElementById("t1").value;
+                for(let i=1;i<=n;i++){
+                    for(let j=1;j<=i;j++) { //for(let j=1;j<=n;j++){
+                            document.write(" * ");
+                      //  document.write(" "+i+j);
+                    }
+                    document.write("<br>");
+                }
+
+
+        }
+    </script>
+</head>
+<body>
+    <h1><center>Nested Loop </center></h1>
+    <br><br>
+    <input type="number" id="t1" placeholder="Enter a Number">
+    <button onclick="disc()">Nested loop</button>
+    
+</body>
+</html>
