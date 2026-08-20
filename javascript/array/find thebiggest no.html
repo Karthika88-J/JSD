@@ -14,7 +14,12 @@
 for(var i=0;i<size;i++){
     document.write("<br> value"+i+" = " +arr[i]);
 }
-
+var big=arr[0];
+for(i=1;i<size;i++){
+    if(big<arr[i])
+    big=arr[i];
+}
+document.write("<br> Biggest Number :" +big);
 }
     </script>
 </head>
