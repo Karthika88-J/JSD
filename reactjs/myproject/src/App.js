@@ -1,4 +1,37 @@
-function App() {
+import React from 'react'
+ function App() {
+  var stud={
+    sno:1001,
+    sname:'swetha',
+    mark:{
+      tamil:99,
+      english:99,
+      maths:100,
+      science:100,
+      social:100
+    },
+    rank:1,
+   result:"pass"
+  }
+  return (
+    <div>
+      <h1>JSON</h1>
+      <h2>student number:{stud.sno}</h2>
+      <h2>student name:{stud.sname}</h2>
+      <h2>student tamil mark:{stud.mark["tamil"]}</h2>
+      <h2>student english mark:{stud.mark["english"]}</h2>
+      <h2>student maths mark:{stud.mark["maths"]}</h2>
+      <h2>student science mark:{stud.mark["science"]}</h2>
+      <h2>student social mark:{stud.mark["social"]}</h2>
+      <h2>student rank:{stud.rank}</h2>
+      <h2>student.result:{stud.result}</h2>
+    </div>
+  )
+}
+export default App;
+
+
+/*function App() {
   var arr=[11,22,33,44,55,66,77,88]
   var big=arr[0]
   var small=arr[0]
@@ -43,7 +76,8 @@ function App() {
            <h2>array value index: 0 : {arr[1]}</h2>
      <h2>array value index: 0 : {arr[2]}</h2>
      <h2>array value index: 0 : {arr[3]}</h2>
-     <h2>array value index: 0 : {arr[4]}</h2>
+     <h2>array value index: 0 : {a
+     rr[4]}</h2>
 
     </div>
   )
