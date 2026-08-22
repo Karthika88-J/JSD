@@ -1,4 +1,79 @@
 import React from 'react'
+
+function App(props) {
+  var arr=[]
+  for(var k in props.data){
+arr.push(k)
+  }
+  return (
+    <div>
+      
+      <h2>student number:{props.data.rno}</h2>
+      <h2>student name:{props.data.aname}</h2>
+      <h2>student tamil mark:{props.data.mark}</h2>
+      <h2>student.result:{props.data.reult}</h2>
+         <h2>is eligible:{props.data.iseligible?"eligible":"not eligible"}</h2>
+         <br></br>
+
+        <h2>==========================</h2> 
+         {arr.map((v)=><h2>{v}-----{props.data[v]===true?"eligible":props.data[v]}</h2>)}
+   
+   <h2>================================</h2>
+   {arr.map((v)=><h2>{v}--&gt;{(props.data[v]===true && "eligible")|| (props.data[v]===false && "not eligible")||props.data[v]}</h2>)}
+  <h2>==============================================</h2>
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+
+
+/*import React from 'react'
+
+function App(props) {
+  return (
+    <div>
+      <h1>props using Array</h1>
+      the first mark:{props.data[3]}
+      <br></br>
+     {props.data.map((item,index)=><><br></br>mark:{index+1}={item}</>)}
+
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+/* import React from 'react'
+
+function App(props) {
+  return (
+    <div>
+      <h1>props:properties</h1>
+        <h2>share data from one component to another component</h2>
+        <h2>your Name: {props.data}</h2>
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+/*import React from 'react'
  function App() {
   var stud={
     sno:1001,

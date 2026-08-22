@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+var tud={rno:1233,
+  aname:"jagan",
+  mark:[77,3,55,67],
+  reult:"Pass",
+  iseligible:false}
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App data={tud} />
+    
   </React.StrictMode>
 );
 

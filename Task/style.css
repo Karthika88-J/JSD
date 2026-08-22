@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-div{
+    background: linear-gradient(darkblue,black);   
+    height:80px;
+}
+.img-div{  
+    width: 100px;
+    padding: 10px;   
+
+    
+}
+.img-div img{
+     width: 100%;
+     float: left;
+    
+
+}
+.nav-item{
+    float: right;
+    margin-right: 45px;
+  
+    
+}
+.nav-item a{
+color:rgb(243, 100, 23);
+text-decoration: none;
+font-size: 25px;
+margin-right: 30px;}
