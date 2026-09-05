@@ -6,14 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="http://localhost:8991/testfun"method="get">
+    <form action="http://localhost:8991/testfun"method="post">
         <h1>form</h1>
       enter name         <input type="text" placeholder="Enter User Name" name="usr"> <br>
       enter password          <input type="password" placeholder="Enter User password" name="psd"> <br>
-                <input type="submit" value="send data to backend">
+                <input type="submit" value="insert or save">
             <input type="reset"  value="clear">
-       
-
     </form>
+    <br>
+    <form action="http://localhost:8992/showall"method="get">
+                <input type="submit" value="show all records">
+    </form>
+
 </body>
 </html>

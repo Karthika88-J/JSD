@@ -161,3 +161,111 @@ response.end()
 
 }).listen(8991)
 console.log("port listen at 8991....")
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:8991/testfun"method="get">
+        <h1>form</h1>
+      enter name         <input type="text" placeholder="Enter User Name" name="usr"> <br>
+      enter password          <input type="password" placeholder="Enter User password" name="psd"> <br>
+                <input type="submit" value="send data to backend">
+            <input type="reset"  value="clear">
+       
+
+    </form>
+</body>
+</html>
+
+
+const {MongoClient}=require("mongodb")
+
+var exp=require("express")
+var app=new exp()
+var usr,pwd;
+//get method api
+
+app.get("/testfun",async(request,response)=>{
+ usr=request.query.usr;
+ pwd=request.query.psd;
+ const data={"usr":usr,"pwd":pwd}
+ var client=new MongoClient("mongodb://127.0.0.1:27017/");
+client.connect()
+response.write("<h1>Express and Mongodb connection success</h1>")
+try{
+
+    const result= await client.db("jsd").collection("login").insertOne(data)
+    console.log(result)
+    response.write("<h1>Susscessfuly INserter </h1>")
+}
+catch{
+    console.log("error")
+    response.write("<h1>data eror </h1>")
+}
+
+//response.se
+// nd("<h1>welcome to express Js</h1>")
+/*response.write("<h1>user name:"+usr+"</h1>");
+response.write("<h1>password :"+pwd+"</h1>");
+if(usr==="admin" && pwd==="admin@123")
+{
+    response.write("<font color='green' size='7'> valid user </font>");
+}
+else {
+response.write("<font color='red' size='7'> invalid user </font>");
+}*/
+response.end()
+
+}).listen(8991) 
+console.log("port listen at 8991....")
+
+
+body-parser:
+============
+	hiding form input values in Address bar.
+
+use: 
+	it is high security .(do not show password or any form input value in URL)
+
+
+installation:
+=============
+	d:/projectfolder>npm install body-parser
+
+module import:
+==============
+	var bp=require("body-parser")
+
+declaration:
+============
+
+	var urlencodeparser=bp.urlencoded({extended:false})
+
+how to use function in post method(body parser)?
+================================================
+note: apply 3 parameters or arguments
+1.userdefined functionname 
+2.urlencodeparser
+3.arrow function
+
+app.post("/funname",urlencodeparser,(req,res)=>{
+
+	var data1=req.body.t1
+	var data2=req.body.t2
+	//output in browser
+	res.send("browser print"+data1...)	
+}).listen(portno)
+
+note:
+here t1,t2 -->html form input names
+don't forget to add method="post" form attributes in html file
+ 
+	
+	

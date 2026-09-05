@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "body": "^5.1.0",
+    "body-parser": "^2.3.0",
     "express": "^5.2.1",
-    "mongodb": "^7.6.0"
+    "mongodb": "^7.6.0",
+    "parser": "^0.1.4"
   }
 }
