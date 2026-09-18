@@ -1,4 +1,27 @@
 import React from 'react'
+
+export default function App() {
+  return (
+    <div>
+      <h1>my name karthika</h1>
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+import React from 'react'
 import axios from 'axios'
 import { useState } from 'react'
 
